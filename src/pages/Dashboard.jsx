@@ -22,7 +22,7 @@ const Dashboard = () => {
       />
 
      
-      <div className="flex-1 flex flex-col min-w-0 overflow-hidden lg:pl-[260px]">
+      <div className="flex-1 flex flex-col min-w-0 lg:pl-[260px] overflow-x-hidden">
         
       
         <Navbar onMenuClick={() => setIsSidebarOpen(true)} />
