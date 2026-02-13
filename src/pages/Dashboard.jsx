@@ -15,20 +15,20 @@ const Dashboard = () => {
   return (
     <div className="flex h-screen w-full bg-[#F1F4F5] overflow-hidden relative"> 
       
-      {/* 1. SIDEBAR: Mobile-il slide aakum, Desktop-il (lg) fixed aayi nilkkum */}
+     
       <Sidebar 
         isOpen={isSidebarOpen} 
         onClose={() => setIsSidebarOpen(false)} 
       />
 
-      {/* 2. MAIN AREA: lg:pl-[260px] add cheythittundu. Ithu kaaranam desktop-il content sidebar-inu purakil pokilla */}
+     
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden lg:pl-[260px]">
         
-        {/* NAVBAR: Hamburger trigger */}
+      
         <Navbar onMenuClick={() => setIsSidebarOpen(true)} />
 
         <main className="p-4 md:p-8 overflow-y-auto no-scrollbar">
-          {/* TOP SECTION: Stats and Reports */}
+         
           <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
             <div className="flex flex-col gap-6 w-full md:w-auto">
               <div className="bg-white shadow-sm overflow-hidden shrink-0 w-full md:w-[382px] h-[274px] rounded-[20px]">
@@ -52,7 +52,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          {/* BOTTOM SECTION: Inventory and Orders */}
+         
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="shrink-0 w-full md:w-auto overflow-x-auto no-scrollbar">
               <InventoryLevelsCard />

@@ -10,7 +10,7 @@ const DashboardCard = () => {
         borderRadius: '20px'
       }}
     >
-      {/* 1. Calendar Strip */}
+      
       <div className="flex justify-between items-center mb-5 px-1">
         {['sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'].map((day, index) => {
           const isSelected = day === 'Mon';
@@ -21,7 +21,7 @@ const DashboardCard = () => {
               </span>
               
               {isSelected ? (
-                /* Highlighted: Green Pill */
+               
                 <div className="w-[34px] h-[52px] bg-[#2ECC71] rounded-full flex flex-col items-center justify-end pb-1 shadow-sm">
                    <span className="text-white text-[9px] font-bold mb-1">Mon</span>
                    <div className="w-[26px] h-[26px] bg-white rounded-full flex items-center justify-center">
@@ -29,7 +29,7 @@ const DashboardCard = () => {
                    </div>
                 </div>
               ) : (
-                /* Normal State */
+               
                 <div className="w-[34px] h-[52px] bg-[#F8F9FA] rounded-full flex items-center justify-center border border-gray-50">
                   <span className="text-gray-400 text-[13px] font-bold">
                     {String(index + 2).padStart(2, '0')}
@@ -41,10 +41,10 @@ const DashboardCard = () => {
         })}
       </div>
 
-      {/* 2. Total Sales Section */}
+      
       <div className="flex justify-between items-center mb-6 px-1">
         <div className="flex items-center gap-2">
-          {/* Your Custom Dollar SVG */}
+         
           <svg width="11" height="18" viewBox="0 0 13 21" fill="none">
             <path d="M6.49927 0C6.84422 -1.95416e-07 7.17507 0.122889 7.41913 0.341671C7.66318 0.560454 7.80049 0.857234 7.80088 1.16681V3.11062H8.23816C8.86414 3.11011 9.48409 3.22046 10.0625 3.43537C10.6408 3.65028 11.1663 3.96551 11.6086 4.363C12.051 4.76049 12.4016 5.23243 12.6404 5.75175C12.8791 6.27108 13.0013 6.82758 13 7.38938C13 7.69883 12.863 7.99562 12.6192 8.21444C12.3754 8.43326 12.0447 8.55619 11.6998 8.55619C11.355 8.55619 11.0243 8.43326 10.7805 8.21444C10.5367 7.99562 10.3997 7.69883 10.3997 7.38938C10.3997 6.30919 9.43446 5.44425 8.23816 5.44425H4.32456C3.37249 5.44425 2.59884 6.13988 2.59884 6.98775C2.59884 7.62431 2.75825 7.88287 2.87086 8.00756C3.00248 8.15194 3.24379 8.29894 3.77028 8.45906L10.0589 10.3294C10.7609 10.5433 11.5477 10.8675 12.1357 11.5119C12.7441 12.1761 12.9985 13.0187 12.9985 14.0122C12.9974 15.0407 12.5414 16.0266 11.7309 16.7536C10.9203 17.4805 9.82137 17.889 8.67544 17.8894H7.79941V19.8332C7.79941 20.1426 7.66243 20.4394 7.41861 20.6582C7.17479 20.8771 6.84409 21 6.49927 21C6.15445 21 5.82375 20.8771 5.57993 20.6582C5.3361 20.4394 5.19912 20.1426 5.19912 19.8332V17.8894H4.76038C4.13452 17.8897 3.51473 17.7792 2.93652 17.5643C2.35831 17.3493 1.83306 17.034 1.39084 16.6365C0.948628 16.2391 0.59815 15.7672 0.359486 15.2479C0.120822 14.7287 -0.00133588 14.1723 1.10177e-05 13.6106C1.10177e-05 13.3012 0.13699 13.0044 0.380814 12.7856C0.624638 12.5667 0.955335 12.4438 1.30016 12.4438C1.64497 12.4438 1.97567 12.5667 2.2195 12.7856C2.46332 13.0044 2.6003 13.3012 2.6003 13.6106C2.6003 14.6908 3.56407 15.5557 4.76184 15.5557H8.67544C9.62605 15.5557 10.3997 14.8601 10.3997 14.0122C10.3997 13.3757 10.2418 13.1171 10.1277 12.9924C9.99606 12.8481 9.75475 12.7011 9.22826 12.5409L2.94106 10.6706C2.23907 10.4567 1.45079 10.1325 0.862874 9.48806C0.254483 8.82394 1.10177e-05 7.98131 1.10177e-05 6.98775C0.00117387 5.95911 0.457307 4.97296 1.26819 4.24597C2.07908 3.51898 3.17838 3.11062 4.32456 3.11062H5.19912V1.16812C5.19951 0.858546 5.33682 0.561767 5.58087 0.342985C5.82493 0.124202 6.15578 0.00131221 6.50073 0.0013124" fill="#2ECC71"/>
           </svg>
@@ -52,17 +52,17 @@ const DashboardCard = () => {
         </div>
         <div className="flex items-center gap-3">
   <span className="text-[20px] font-black text-gray-900 leading-none">₹ 90K</span>
-  {/* Green box ഒഴിവാക്കി, ടെക്സ്റ്റ് സൈസ് കൂട്ടിയത് */}
+
   <div className="flex items-center gap-1 text-[#2ECC71] text-[14px] font-bold">
     <span className="text-[15px]">▲</span> 5%
   </div>
 </div>
       </div>
 
-      {/* 3. Stats Grid */}
+      
       <div className="grid grid-cols-3 gap-3">
         
-        {/* Customers */}
+       
         <div className="bg-[#FFFDF2] p-3 rounded-[18px] border border-[#FFF9E0] relative h-[95px] flex flex-col justify-between">
           <div className="flex justify-between items-start">
             <div className="bg-[#F2C94C]/15 w-7 h-7 rounded-full flex items-center justify-center">
@@ -79,7 +79,7 @@ const DashboardCard = () => {
           </div>
         </div>
 
-        {/* Total Orders */}
+       
         <div className="bg-[#F8F4FF] p-3 rounded-[18px] border border-[#F0E8FF] relative h-[95px] flex flex-col justify-between">
           <div className="flex justify-between items-start">
             <div className="bg-[#9B51E0]/15 w-7 h-7 rounded-full flex items-center justify-center">
@@ -89,14 +89,14 @@ const DashboardCard = () => {
           </div>
           <div>
             <p className="text-[9px] font-bold text-gray-400 uppercase">Total Orders</p>
-            <div className="flex items-center gap-6 mt-0.5"> {/* Gap added here */}
+            <div className="flex items-center gap-6 mt-0.5"> 
               <span className="text-[16px] font-black text-gray-900 leading-none">800</span>
               <span className="text-[#EB5757] text-[9px] font-bold leading-none">5%</span>
             </div>
           </div>
         </div>
 
-        {/* Inventory */}
+        
         <div className="bg-[#FFF2F2] p-3 rounded-[18px] border border-[#FFE8E8] relative h-[95px] flex flex-col justify-between">
           <div className="flex justify-between items-start">
             <div className="bg-[#EB5757]/15 w-7 h-7 rounded-full flex items-center justify-center">
@@ -108,7 +108,7 @@ const DashboardCard = () => {
             <p className="text-[9px] font-bold text-gray-400 uppercase">Inventory</p>
             <div className="flex items-center gap-1.5 mt-0.5">
               <span className="text-[16px] font-black text-gray-900 leading-none">25</span>
-              {/* Your Custom Alert SVG */}
+             
               <svg width="14" height="12" viewBox="0 0 17 14" fill="none">
                 <path d="M9.33458 0.817647C9.2257 0.591301 9.05337 0.396094 8.83551 0.252308C8.61765 0.108522 8.36221 0.0214027 8.09572 0C7.83065 0.0226874 7.5769 0.110401 7.36057 0.254112C7.14425 0.397824 6.97317 0.592342 6.86495 0.817647L0.290037 11.3646C-0.390126 12.4522 0.16858 13.3449 1.52081 13.3449H14.6706C16.0229 13.3449 16.5816 12.4522 15.9014 11.3646L9.33458 0.817647ZM8.90543 11.0945H7.286V9.59423H8.90543V11.0945ZM8.90543 8.09396H7.286V3.59315H8.90543V8.09396Z" fill="#E74C3C"/>
               </svg>

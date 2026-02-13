@@ -29,7 +29,7 @@ const InventoryLevelsCard = () => {
         INVENTORY LEVELS
       </h3>
 
-      {/* Legend */}
+     
       <div className="flex justify-center gap-4 mb-3 text-[11px] font-medium text-[#4A4A4A]">
         <div className="flex items-center gap-2">
           <div className="w-4 h-4 bg-[#27AE60] rounded-sm"></div> In Stock
@@ -42,17 +42,17 @@ const InventoryLevelsCard = () => {
         </div>
       </div>
 
-      {/* ഗ്രാഫ് ഏരിയയുടെ ഉയരം കുറച്ചു, അപ്പോൾ നമ്പറുകൾക്ക് ബോക്സിനുള്ളിൽ സ്ഥലം ലഭിക്കും */}
+      
       <div className="flex-1 flex flex-col min-h-0">
         <div className="flex-1 relative">
-          {/* ഗ്രിഡ് ലൈനുകൾ */}
+         
           <div className="absolute inset-0 flex justify-between ml-[140px] pointer-events-none pr-1">
             {scalePoints.map((point) => (
               <div key={point} className="h-full border-r border-[#E5E7EB] w-0"></div>
             ))}
           </div>
 
-          {/* ഓരോ ബാറുകളും */}
+         
           <div className="relative z-10 space-y-[8px]">
             {inventoryData.map((item, index) => (
               <div key={index} className="flex items-center h-[18px]">
@@ -74,7 +74,7 @@ const InventoryLevelsCard = () => {
           </div>
         </div>
 
-        {/* നമ്പറുകൾ - കൃത്യമായി ബോക്സിന്റെ ഉള്ളിൽ അലൈൻ ചെയ്തു */}
+        
         <div className="flex justify-between ml-[140px] text-[10px] text-[#9CA3AF] font-medium pt-2 pb-1 pr-1">
           {scalePoints.map(val => (
             <span key={val} className="w-0 flex justify-center whitespace-nowrap">

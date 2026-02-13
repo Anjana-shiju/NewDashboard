@@ -4,7 +4,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 const data = [
   { name: 'Jan', Electronics: 20000, Grocery: 30000, Decors: 15000 },
   { name: 'Feb', Electronics: 26000, Grocery: 20000, Decors: 17000 },
-  { name: 'Mar', Electronics: 24500, Grocery: 13000, Decors: 25000 }, // മുട്ടി നിൽക്കാതിരിക്കാൻ വാല്യൂ മാറ്റി
+  { name: 'Mar', Electronics: 24500, Grocery: 13000, Decors: 25000 }, 
   { name: 'Apr', Electronics: 35000, Grocery: 16000, Decors: 19000 },
   { name: 'May', Electronics: 36000, Grocery: 19000, Decors: 13000 },
 ];
@@ -26,7 +26,7 @@ const SalesOverTimeCard = () => {
       <div className="flex-1 w-full mt-4 mb-2">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data} margin={{ top: 10, right: 10, left: -25, bottom: 0 }}>
-            {/* Horizontal Grid Lines */}
+           
             <CartesianGrid vertical={false} stroke="#F1F5F9" strokeWidth={1} />
             
             <XAxis 
@@ -45,7 +45,7 @@ const SalesOverTimeCard = () => {
             />
             <Tooltip />
             
-            {/* ലൈനുകൾക്ക് സ്മൂത്ത് ലുക്കിന് 'monotone' തന്നെ നൽകി */}
+           
             <Line 
               type="monotone" 
               dataKey="Electronics" 

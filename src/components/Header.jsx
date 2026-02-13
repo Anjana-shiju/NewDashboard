@@ -5,20 +5,20 @@ const Header = ({ onMenuClick }) => {
   return (
     <header className="flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-5 w-full bg-transparent gap-4 md:gap-0">
       
-      {/* 1. Left Section: Hamburger + Action Buttons */}
+     
       <div className="flex items-center gap-3 shrink-0 w-full md:w-auto overflow-x-auto no-scrollbar">
         
-        {/* HAMBURGER BUTTON - Mobile-il mathram kanikkum, Green Color */}
+        
         <button 
           onClick={onMenuClick}
           className="md:hidden flex items-center justify-center bg-white min-w-[40px] h-[40px] shadow-sm border border-gray-100 rounded-lg cursor-pointer hover:bg-gray-50 active:scale-95 transition-all"
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#27AE60" strokeWidth="2.5">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#27AE60" strokeWidth="2.5">
             <path d="M3 12h18M3 6h18M3 18h18" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </button>
 
-        {/* Add Product Button */}
+      
         <button className="flex items-center gap-2 bg-white px-4 h-[40px] shadow-sm border border-gray-100 rounded-full cursor-pointer hover:bg-gray-50 transition-all whitespace-nowrap">
           <div className="bg-[#FFF8E5] w-7 h-7 flex items-center justify-center rounded-full shrink-0">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -28,7 +28,7 @@ const Header = ({ onMenuClick }) => {
           <span className="text-[12px] font-bold text-[#3B3B3B]">Add Product</span>
         </button>
 
-        {/* Assign Delivery Button */}
+       
         <button className="flex items-center gap-2 bg-white px-4 h-[40px] shadow-sm border border-gray-100 rounded-full cursor-pointer hover:bg-gray-50 transition-all whitespace-nowrap">
           <div className="bg-[#FFF8E5] w-7 h-7 flex items-center justify-center rounded-full shrink-0">
             <svg width="15" height="10" viewBox="0 0 15 10" fill="none">
@@ -39,10 +39,10 @@ const Header = ({ onMenuClick }) => {
         </button>
       </div>
 
-      {/* 2. Middle & Right Section: Search + Icons + Profile */}
+      
       <div className="flex flex-col-reverse md:flex-row items-center gap-4 md:gap-6 w-full md:w-auto md:ml-auto">
         
-        {/* Search Bar */}
+        
         <div className="relative w-full md:w-[505px]">
           <span className="absolute inset-y-0 left-5 flex items-center text-gray-400">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -57,16 +57,16 @@ const Header = ({ onMenuClick }) => {
           />
         </div>
 
-        {/* Icons & Profile */}
+       
         <div className="flex items-center justify-center md:justify-start gap-4 w-full md:w-auto">
-          {/* Calendar Icon */}
+          
           <div className="bg-white w-[40px] h-[40px] flex items-center justify-center rounded-full shadow-sm border border-gray-100 cursor-pointer hover:bg-gray-50">
              <svg width="19" height="19" viewBox="0 0 19 19" fill="none">
                <path d="M0 15.971C0 17.5681 1.22131 18.7894 2.81841 18.7894H15.971C17.5681 18.7894 18.7894 17.5681 18.7894 15.971V8.45524H0V15.971ZM15.971 1.87894H14.0921V0.939471C14.0921 0.375789 13.7163 0 13.1526 0C12.5889 0 12.2131 0.375789 12.2131 0.939471V1.87894H6.5763V0.939471C6.5763 0.375789 6.20051 0 5.63683 0C5.07315 0 4.69736 0.375789 4.69736 0.939471V1.87894H2.81841C1.22131 1.87894 0 3.10026 0 4.69736V6.5763H18.7894V4.69736C18.7894 3.10026 17.5681 1.87894 15.971 1.87894Z" fill="#3B3B3B"/>
              </svg>
           </div>
 
-          {/* Notification Icon */}
+         
           <div className="bg-white w-[40px] h-[40px] flex items-center justify-center rounded-full shadow-sm border border-gray-100 cursor-pointer hover:bg-gray-50">
              <svg width="22" height="23" viewBox="0 0 22 23" fill="none">
                <path d="M0.0335881 14.6551C-0.204846 16.2549 0.859713 17.3646 2.16271 17.9178C7.15864 20.0409 14.1102 20.0409 19.1061 17.9178C20.4091 17.3646 21.4737 16.2537 21.2352 14.6551C21.0897 13.6716 20.3654 12.8533 19.8292 12.0535C19.1274 10.9931 19.058 9.8374 19.0569 8.60715C19.058 3.85371 15.2878 0 10.6344 0C5.98102 0 2.21084 3.85371 2.21084 8.60715C2.21084 9.8374 2.14144 10.9942 1.43845 12.0535C0.90337 12.8533 0.180231 13.6716 0.0335881 14.6551Z" fill="#3B3B3B"/>
@@ -74,7 +74,7 @@ const Header = ({ onMenuClick }) => {
              </svg>
           </div>
 
-          {/* Profile Image */}
+         
           <div className="w-[44px] h-[44px] rounded-full overflow-hidden border-2 border-white shadow-sm shrink-0">
              <img src={profileImg} alt="User Profile" className="w-full h-full object-cover" />
           </div>

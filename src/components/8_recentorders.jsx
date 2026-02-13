@@ -44,8 +44,8 @@ const OrderDashboard = () => {
   return (
     <div className="w-full">
       
-      {/* 1. BUTTONS CONTAINER - No vertical padding to reduce gap */}
-      <div className="flex gap-4 mb-3 overflow-x-auto no-scrollbar">
+     
+      <div className="flex gap-4 mb-2 overflow-x-auto no-scrollbar">
         <button style={{ width: '200.85px', height: '40px', backgroundColor: 'rgba(39, 174, 96, 0.25)' }}
                 className="flex-shrink-0 border border-[#27AE60] rounded-[12px] font-bold text-gray-800 text-sm uppercase">
           Recent Orders
@@ -60,14 +60,14 @@ const OrderDashboard = () => {
         </button>
       </div>
 
-      {/* 2. TABLE CONTAINER - Changed height to h-fit and added lg:overflow-hidden */}
+     
       <div style={{ width: '650.24px' }}
            className="bg-white rounded-[12px] shadow-sm flex flex-col max-w-full overflow-hidden h-fit">
   
-        {/* മൊബൈലിൽ മാത്രം കണ്ടന്റ് തിങ്ങിനിറഞ്ഞാൽ സ്ക്രോൾ വരാൻ */}
+       
         <div className="overflow-x-auto lg:overflow-hidden no-scrollbar">
     
-          {/* Header */}
+         
           <div className="min-w-[600px] md:min-w-full grid grid-cols-4 p-6 border-b border-gray-50 text-gray-800 font-semibold text-lg">
             <span>Order Id</span>
             <span>Name</span>
@@ -75,7 +75,7 @@ const OrderDashboard = () => {
             <span className="text-center">Status</span>
           </div>
 
-          {/* Body - flex-1 removed to stop stretching */}
+         
           <div className="min-w-[600px] md:min-w-full px-6 pb-2">
             {orders.map((order, index) => (
               <div key={index} className="grid grid-cols-4 items-center py-3 text-gray-600 font-medium border-b border-gray-50 last:border-0">
