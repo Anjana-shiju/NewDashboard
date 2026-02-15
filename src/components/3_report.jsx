@@ -21,7 +21,7 @@ const GenerateReportsCard = () => {
       }}
     >
       
-      <div className="p-6 flex-1">
+      <div className="p-3 flex-1">
         
         <div className="flex justify-between items-center mb-6">
           <h3 className="text-[12px] font-bold text-[#1A2D42] uppercase tracking-wide">

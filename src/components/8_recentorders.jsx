@@ -45,7 +45,7 @@ const OrderDashboard = () => {
     <div className="w-full">
       
      
-      <div className="flex gap-4 mb-2 overflow-x-auto no-scrollbar">
+      <div className="flex gap-6 mb-5 overflow-x-auto no-scrollbar">
         <button style={{ width: '200.85px', height: '40px', backgroundColor: 'rgba(39, 174, 96, 0.25)' }}
                 className="flex-shrink-0 border border-[#27AE60] rounded-[12px] font-bold text-gray-800 text-sm uppercase">
           Recent Orders

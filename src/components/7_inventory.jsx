@@ -1,6 +1,7 @@
 import React from 'react';
 
 const InventoryLevelsCard = () => {
+  // ... (inventoryData ഉം scalePoints ഉം പഴയത് തന്നെ)
   const inventoryData = [
     { label: 'Personal care & Hygiene', inStock: 400, lowStock: 30, outOfStock: 10 },
     { label: 'Grocery & Kitchen', inStock: 800, lowStock: 50, outOfStock: 20 },
@@ -18,18 +19,16 @@ const InventoryLevelsCard = () => {
 
   return (
     <div 
-      className="bg-white shadow-sm p-5 flex flex-col shrink-0"
+      className="bg-white shadow-sm p-5 flex flex-col shrink-0 rounded-[12px] max-w-full overflow-hidden"
       style={{ 
-        width: '505.92px',    /* */
-        height: '368.13px',   /* */
-        borderRadius: '12px' 
+        width: '505.92px',     
+        height: '390.13px'
       }}
     >
       <h3 className="text-[12px] font-bold text-[#1A2D42] uppercase tracking-wider mb-4">
         INVENTORY LEVELS
       </h3>
 
-     
       <div className="flex justify-center gap-4 mb-3 text-[11px] font-medium text-[#4A4A4A]">
         <div className="flex items-center gap-2">
           <div className="w-4 h-4 bg-[#27AE60] rounded-sm"></div> In Stock
@@ -42,17 +41,17 @@ const InventoryLevelsCard = () => {
         </div>
       </div>
 
-      
-      <div className="flex-1 flex flex-col min-h-0">
-        <div className="flex-1 relative">
-         
+      {/* ഡെസ്ക്ടോപ്പിൽ (lg) overflow-hidden നൽകി സ്ക്രോൾ ബാർ കളഞ്ഞു */}
+      <div className="flex-1 flex flex-col min-h-0 overflow-x-auto lg:overflow-x-hidden no-scrollbar">
+        {/* മൊബൈലിൽ മാത്രം min-w കൊടുക്കുന്നു */}
+        <div className="flex-1 relative min-w-[460px] lg:min-w-0">
+          
           <div className="absolute inset-0 flex justify-between ml-[140px] pointer-events-none pr-1">
             {scalePoints.map((point) => (
               <div key={point} className="h-full border-r border-[#E5E7EB] w-0"></div>
             ))}
           </div>
 
-         
           <div className="relative z-10 space-y-[8px]">
             {inventoryData.map((item, index) => (
               <div key={index} className="flex items-center h-[18px]">
@@ -72,15 +71,14 @@ const InventoryLevelsCard = () => {
               </div>
             ))}
           </div>
-        </div>
 
-        
-        <div className="flex justify-between ml-[140px] text-[10px] text-[#9CA3AF] font-medium pt-2 pb-1 pr-1">
-          {scalePoints.map(val => (
-            <span key={val} className="w-0 flex justify-center whitespace-nowrap">
-              {val}
-            </span>
-          ))}
+          <div className="flex justify-between ml-[140px] text-[10px] text-[#9CA3AF] font-medium pt-2 pb-1 pr-1">
+            {scalePoints.map(val => (
+              <span key={val} className="w-0 flex justify-center whitespace-nowrap">
+                {val}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>

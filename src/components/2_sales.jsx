@@ -14,7 +14,7 @@ const SalesOverTimeCard = () => {
     <div 
       className="bg-white p-6 shadow-sm border border-gray-100 flex flex-col justify-between"
       style={{ 
-        width: '382px', 
+        width: '400px', 
         height: '274px', 
         borderRadius: '20px' 
       }}

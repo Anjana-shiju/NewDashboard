@@ -29,9 +29,9 @@ const Dashboard = () => {
 
         <main className="p-4 md:p-8 overflow-y-auto no-scrollbar">
          
-          <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
+          <div className="flex flex-col md:flex-row items-start gap-3 mb-6">
             <div className="flex flex-col gap-6 w-full md:w-auto">
-              <div className="bg-white shadow-sm overflow-hidden shrink-0 w-full md:w-[382px] h-[274px] rounded-[20px]">
+              <div className="bg-white shadow-sm overflow-hidden shrink-0 w-full md:w-[400px] h-[274px] rounded-[20px]">
                 <DashboardStats />
               </div>
               <OrderStatusCard /> 
@@ -53,14 +53,15 @@ const Dashboard = () => {
           </div>
 
          
-          <div className="flex flex-col md:flex-row items-start gap-6">
-            <div className="shrink-0 w-full md:w-auto overflow-x-auto no-scrollbar">
-              <InventoryLevelsCard />
-            </div>
-            <div className="shrink-0 w-full md:w-auto overflow-x-auto no-scrollbar">
-              <OrderDashboard />
-            </div>
-          </div>
+          {/* Dashboard.jsx ലെ അവസാനത്തെ സെക്ഷൻ ഇതുപോലെ മാറ്റുക */}
+<div className="flex flex-col lg:flex-row items-start lg:items-end gap-6 lg:gap-3"> 
+  <div className="w-full lg:w-auto shrink-0">
+    <InventoryLevelsCard />
+  </div>
+  <div className="w-full lg:w-auto shrink-0">
+    <OrderDashboard />
+  </div>
+</div>
         </main>
       </div>
     </div>

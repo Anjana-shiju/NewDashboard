@@ -3,7 +3,7 @@ import React from 'react';
 const DashboardCard = () => {
   return (
     <div 
-      className="bg-white shadow-sm border border-gray-100 flex flex-col p-5 overflow-hidden w-full max-w-[382px]"
+      className="bg-white shadow-sm border border-gray-100 flex flex-col p-5 overflow-hidden w-full max-w-[400px]"
       style={{ 
         height: 'auto',
         minHeight: '274px',
